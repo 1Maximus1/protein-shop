@@ -1,0 +1,12 @@
+services:
+  proteindb:
+    image: postgres
+
+  protein-shop:
+    image: ${DOCKER_REGISTRY-}proteinshop
+    build:
+      context: .
+      dockerfile: protein-shop/Dockerfile
+
+volumes:
+    postgres_protein:    

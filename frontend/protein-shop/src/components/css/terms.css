@@ -1,0 +1,117 @@
+.terms-page {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background-color: var(--background-light);
+}
+
+.terms-content {
+  display: flex;
+  align-items: flex-start;
+  gap: 20px;
+  margin: 30px auto;
+  max-width: 1200px;
+  padding: 0 20px;
+}
+
+.side-bar__container {
+  flex: 0 0 250px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.breadcrumbs,
+.sidebar-menu {
+  background: #fff;
+  padding: 15px;
+  border-radius: var(--border-radius);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.sidebar-menu__item {
+  margin-bottom: 10px;
+}
+
+.sidebar-menu__link {
+  text-decoration: none;
+  color: var(--text-color);
+  display: block;
+  padding: 8px 12px;
+  border-radius: 4px;
+  transition: var(--transition);
+}
+
+.sidebar-menu__link--active,
+.sidebar-menu__link:hover {
+  background-color: var(--primary-light);
+  color: var(--text-on-primary);
+}
+
+.main-content {
+  flex: 1;
+  background: #fff;
+  padding: var(--section-padding);
+  border-radius: var(--border-radius);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.main-content__title {
+  font-size: 2rem;
+  color: var(--primary-dark);
+  margin-bottom: 1.5rem;
+}
+
+.main-content__subtitle {
+  font-size: 1.3rem;
+  color: var(--primary-dark);
+  margin: 1.5rem 0 1rem;
+  position: relative;
+  padding-left: 15px;
+}
+
+.main-content__subtitle::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 5px;
+  height: 20px;
+  background: var(--primary-light);
+  border-radius: 3px;
+}
+
+.main-content__text {
+  color: var(--text-light);
+  line-height: 1.7;
+  margin-bottom: 1rem;
+}
+
+.main-content__list {
+  list-style: none;
+  padding-left: 20px;
+  margin-bottom: 1rem;
+}
+
+.main-content__list-item {
+  position: relative;
+  padding-left: 15px;
+  margin-bottom: 0.8rem;
+}
+
+.main-content__list-item::before {
+  content: "•";
+  position: absolute;
+  left: 0;
+  color: var(--primary-light);
+}
+
+@media (max-width: 768px) {
+  .terms-content {
+    flex-direction: column;
+  }
+  .side-bar__container {
+    width: 100%;
+  }
+}

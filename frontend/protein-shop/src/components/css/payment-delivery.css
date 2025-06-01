@@ -1,0 +1,150 @@
+.payment-delivery-page {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background-color: var(--background-light);
+}
+
+.content {
+  display: flex;
+  gap: 30px;
+  margin: 30px auto;
+  max-width: 1200px;
+  padding: 0 20px;
+}
+
+.side-bar__container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  flex: 0 0 250px;
+}
+
+.breadcrumbs,
+.sidebar-menu {
+  background: #fff;
+  padding: 15px;
+  border-radius: var(--border-radius);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  /* min-width: 300px;
+  max-height: 100px; */
+}
+
+.sidebar-menu__item {
+  margin-bottom: 10px;
+}
+
+.sidebar-menu__link {
+  text-decoration: none;
+  color: var(--text-color);
+  display: block;
+  padding: 8px 12px;
+  border-radius: 4px;
+  transition: var(--transition);
+}
+
+.sidebar-menu__link--active,
+.sidebar-menu__link:hover {
+  background-color: var(--primary-light);
+  color: var(--text-on-primary);
+}
+
+.main-content {
+  flex: 1;
+  background: #fff;
+  padding: var(--section-padding);
+  border-radius: var(--border-radius);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.main-content__title {
+  font-size: 2rem;
+  color: var(--primary-dark);
+  margin-bottom: 1.5rem;
+}
+
+.main-content__subtitle {
+  font-size: 1.3rem;
+  color: var(--primary-dark);
+  margin: 1.5rem 0 1rem;
+  position: relative;
+  padding-left: 15px;
+}
+
+.main-content__subtitle::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 5px;
+  height: 20px;
+  background: var(--primary-light);
+  border-radius: 3px;
+}
+
+.delivery-methods__list,
+.payment-methods__list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.delivery-methods__item,
+.payment-methods__item {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.delivery-methods__icon,
+.payment-methods__icon {
+  flex-shrink: 0;
+  width: auto;
+  max-height: 50px;
+}
+
+.delivery-methods__highlight,
+.payment-methods__highlight {
+  font-weight: 600;
+  color: var(--primary-color);
+}
+
+.main-content__text {
+  color: var(--text-light);
+  line-height: 1.7;
+}
+
+.guarantee {
+  margin-top: 2rem;
+}
+
+@media (max-width: 768px) {
+  .content {
+    flex-direction: column;
+    gap: 20px;
+  }
+  .side-bar__container {
+    width: 100%;
+  }
+}
+.content {
+  display: flex;
+  align-items: flex-start;
+  gap: 20px;
+  margin: 20px auto;
+  max-width: 1200px;
+  padding: 0 20px;
+}
+
+.side-bar__container {
+  flex: 0 0 250px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.breadcrumbs,
+.sidebar-menu {
+  padding: 10px;
+}

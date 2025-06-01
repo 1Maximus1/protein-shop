@@ -1,0 +1,29 @@
+services:
+  proteindb:
+    container_name: proteindb
+    environment:
+      - POSTGRES_USER=postgres
+      - POSTGRES_PASSWORD=Oleh
+      - POSTGRES_DB=ProteinDb
+    restart: always
+    ports:
+      - "5432:5432"
+    volumes:
+      - postgres_protein:/var/lib/postgresql/data/
+
+  protein-shop:
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Development
+      - ASPNETCORE_HTTP_PORTS=8080
+      - ASPNETCORE_HTTPS_PORTS=8081
+      - ConnectionStrings__Database=Server=proteindb;Port=5432;Database=ProteinDb;User Id=postgres;Password=Oleh;Include Error Detail=true
+      - Jwt__Secret=SuperSecretKey_123456789012345678901234567890
+      - Jwt__Issuer=muscle.ua
+      - Jwt__Audience=muscle.ua
+      - Jwt__ExpireDays=1
+    ports:
+      - "5192:8080"
+      - "7164:8081"
+    volumes:
+      - ${APPDATA}/Microsoft/UserSecrets:/home/app/.microsoft/usersecrets:ro
+      - ${APPDATA}/ASP.NET/Https:/home/app/.aspnet/https:ro
