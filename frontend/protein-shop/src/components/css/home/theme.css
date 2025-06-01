@@ -265,6 +265,7 @@ body {
   align-items: center;
   text-decoration: none;
   color: var(--text-color);
+  cursor: "pointer";
 }
 
 .popular-categories__img {

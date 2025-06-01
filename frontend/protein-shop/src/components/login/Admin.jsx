@@ -343,7 +343,6 @@ export default function AdminPanel() {
         {error && (
           <div
             className="error-message"
-            style={{ color: "red", margin: "20px 0" }}
           >
             Помилка: {error}
           </div>

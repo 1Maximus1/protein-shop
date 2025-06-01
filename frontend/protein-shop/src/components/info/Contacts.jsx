@@ -305,7 +305,6 @@ export default function Contacts() {
               {error && (
                 <div
                   className="question-form__error"
-                  style={{ color: "red", marginBottom: "15px" }}
                 >
                   {error}
                 </div>
@@ -314,7 +313,6 @@ export default function Contacts() {
               {submitSuccess && (
                 <div
                   className="question-form__success"
-                  style={{ color: "green", marginBottom: "15px" }}
                 >
                   Ваше повідомлення успішно відправлено!
                 </div>

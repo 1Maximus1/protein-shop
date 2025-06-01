@@ -170,7 +170,7 @@ export default function About() {
           </ul>
 
           <p className="about__text">
-            <strong>Бути спортивним просто!</strong>
+            <div>Бути спортивним просто!</div>
           </p>
         </main>
       </div>

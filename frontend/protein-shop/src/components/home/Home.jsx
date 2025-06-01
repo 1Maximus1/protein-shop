@@ -194,7 +194,6 @@ export default function Home() {
                     <div
                       className="popular-categories__link"
                       onClick={() => handleCategoryClick(cat)}
-                      style={{ cursor: "pointer" }}
                     >
                       <img
                         src={popularCategoriesImages[cat]}

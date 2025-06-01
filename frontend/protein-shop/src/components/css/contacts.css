@@ -12,6 +12,14 @@
   display: flex;
   gap: 30px;
 }
+.question-form__success {
+  color: green;
+  margin-bottom: "15px";
+}
+.question-form__error .error-message{
+  color: red;
+  margin-bottom: "15px";
+}
 
 .breadcrumbs {
   flex: 1;
