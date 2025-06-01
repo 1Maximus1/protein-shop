@@ -66,3 +66,12 @@
 
 
 **Готово! Можна тестувати protein-shop.** 🚀
+
+!!!Також є автогенерація адміна, його cridentials:
+```bash
+Name = "Oleg Olegenko"
+Role = "Admin"
+Email = "mamaluga@gmail.com"
+PasswordHash = "Password"
+```
+
