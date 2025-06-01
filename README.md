@@ -13,7 +13,7 @@
 
 1. **Клонувати репозиторій та перейти до ключової папки:**
     ```bash
-    git clone [https://github.com/yourusername/protein-shop-frontend.git](https://github.com/1Maximus1/protein-shop.git)
+    git clone https://github.com/1Maximus1/protein-shop.git
     cd protein-shop
     cd frontend
     cd protein-shop
@@ -49,7 +49,7 @@
 
 1. **Клонувати репозиторій та перейти до ключової папки:**
     ```bash
-    git clone [https://github.com/yourusername/protein-shop-backend.git](https://github.com/1Maximus1/protein-shop.git)
+    git clone https://github.com/1Maximus1/protein-shop.git
     cd protein-shop
     cd backend
     cd protein-shop
